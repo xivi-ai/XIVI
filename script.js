@@ -35,6 +35,9 @@ waitlistForm.addEventListener('submit', async (e) => {
         showMessage('🎉 Success! You\'re on the list. Check your email for confirmation.', 'success');
         emailInput.value = '';
 
+        // Update waitlist count for social proof
+        updateWaitlistCount();
+
         // Track conversion (integrate with analytics)
         trackEvent('waitlist_signup', { email_domain: email.split('@')[1] });
 
@@ -94,6 +97,20 @@ function simulateAPICall(email) {
             resolve();
         }, 1500);
     });
+}
+
+// Update waitlist count (social proof)
+function updateWaitlistCount() {
+    const countElement = document.getElementById('waitlist-count');
+    if (countElement) {
+        const currentText = countElement.textContent;
+        const match = currentText.match(/(\d+)\+/);
+        if (match) {
+            const currentCount = parseInt(match[1]);
+            const newCount = currentCount + 1;
+            countElement.textContent = `Join ${newCount}+ innovators on our waitlist`;
+        }
+    }
 }
 
 // ==========================================
