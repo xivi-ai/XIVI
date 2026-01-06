@@ -286,14 +286,8 @@ body {
 /* ==========================================
    SOCIAL LINKS - COMING SOON
    ========================================== */
-.social-links-pending {
+.social-section {
     margin-bottom: var(--spacing-xl);
-}
-
-.social-pending-text {
-    font-size: 0.875rem;
-    color: var(--color-text-secondary);
-    margin-bottom: var(--spacing-sm);
 }
 
 .social-pending-badge {
@@ -304,12 +298,8 @@ body {
     border: 1px solid rgba(59, 130, 246, 0.3);
     border-radius: 100px;
     padding: var(--spacing-xs) var(--spacing-md);
+    margin-bottom: var(--spacing-md);
     transition: all var(--transition-base);
-}
-
-.social-pending-badge:hover {
-    background: rgba(59, 130, 246, 0.15);
-    transform: scale(1.02);
 }
 
 .pulse-dot-small {
@@ -327,6 +317,32 @@ body {
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: var(--color-text-primary);
+}
+
+.social-links-disabled {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+}
+
+.social-link-disabled {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    color: var(--color-text-secondary);
+    opacity: 0.4;
+    cursor: not-allowed;
+    transition: all var(--transition-base);
+}
+
+.social-link-disabled svg {
+    width: 20px;
+    height: 20px;
 }
 
 /* ==========================================
