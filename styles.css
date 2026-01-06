@@ -346,6 +346,46 @@ body {
 }
 
 /* ==========================================
+   CONTACT SECTION
+   ========================================== */
+.contact-section {
+    margin-bottom: var(--spacing-xl);
+}
+
+.contact-label {
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.contact-email {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: rgba(139, 92, 246, 0.1);
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    border-radius: 12px;
+    color: var(--color-text-primary);
+    text-decoration: none;
+    font-size: 0.9375rem;
+    transition: all var(--transition-base);
+}
+
+.contact-email:hover {
+    background: rgba(139, 92, 246, 0.2);
+    border-color: var(--color-accent-purple);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+}
+
+.contact-email svg {
+    width: 20px;
+    height: 20px;
+    opacity: 0.8;
+}
+
+/* ==========================================
    WAITLIST SECTION
    ========================================== */
 .waitlist-section {
