@@ -284,6 +284,52 @@ body {
 }
 
 /* ==========================================
+   SOCIAL LINKS - COMING SOON
+   ========================================== */
+.social-links-pending {
+    margin-bottom: var(--spacing-xl);
+}
+
+.social-pending-text {
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.social-pending-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    border-radius: 100px;
+    padding: var(--spacing-xs) var(--spacing-md);
+    transition: all var(--transition-base);
+}
+
+.social-pending-badge:hover {
+    background: rgba(59, 130, 246, 0.15);
+    transform: scale(1.02);
+}
+
+.pulse-dot-small {
+    width: 6px;
+    height: 6px;
+    background: var(--color-accent-blue);
+    border-radius: 50%;
+    animation: pulse 2s ease-in-out infinite;
+    box-shadow: 0 0 8px var(--color-accent-blue);
+}
+
+.pending-text {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--color-text-primary);
+}
+
+/* ==========================================
    WAITLIST SECTION
    ========================================== */
 .waitlist-section {
