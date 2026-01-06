@@ -444,14 +444,16 @@ body {
 
 .form-group {
     display: flex;
+    flex-direction: row;
     gap: var(--spacing-sm);
-    max-width: 500px;
+    max-width: 550px;
     margin: 0 auto;
+    align-items: center;
 }
 
 #email-input {
     flex: 1;
-    padding: var(--spacing-md) var(--spacing-lg);
+    padding: 0.875rem 1.25rem;
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
@@ -460,6 +462,7 @@ body {
     font-size: 1rem;
     transition: all var(--transition-base);
     outline: none;
+    min-height: 48px;
 }
 
 #email-input::placeholder {
@@ -477,7 +480,7 @@ body {
 }
 
 .submit-btn {
-    padding: var(--spacing-md) var(--spacing-xl);
+    padding: 0.875rem 2rem;
     background: var(--gradient-glow);
     border: none;
     border-radius: 12px;
@@ -490,6 +493,10 @@ body {
     white-space: nowrap;
     position: relative;
     overflow: hidden;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .submit-btn::before {
