@@ -6,48 +6,23 @@ const waitlistForm = document.getElementById('waitlist-form');
 const emailInput = document.getElementById('email-input');
 const submitBtn = document.getElementById('submit-btn');
 const formMessage = document.getElementById('form-message');
-const btnText = submitBtn.querySelector('.btn-text');
-const btnLoader = submitBtn.querySelector('.btn-loader');
 
-// Form submission handler
-waitlistForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
-
-    const email = emailInput.value.trim();
-
-    // Basic email validation
-    if (!isValidEmail(email)) {
-        showMessage('Please enter a valid email address', 'error');
-        return;
-    }
-
-    // Show loading state
-    setLoading(true);
-
-    // Simulate API call (replace with actual API integration)
-    try {
-        // TODO: Replace this with actual email service API call
-        // Example: await submitToMailchimp(email);
-        // Example: await submitToConvertKit(email);
-
-        await simulateAPICall(email);
-
+// Check if redirected back with success parameter
+window.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('success') === 'true') {
         showMessage('🎉 Success! You\'re on the list. Check your email for confirmation.', 'success');
-        emailInput.value = '';
+        // Remove success parameter from URL
+        window.history.replaceState({}, document.title, window.location.pathname);
 
-        // Update waitlist count for social proof
-        updateWaitlistCount();
-
-        // Track conversion (integrate with analytics)
-        trackEvent('waitlist_signup', { email_domain: email.split('@')[1] });
-
-    } catch (error) {
-        showMessage('Oops! Something went wrong. Please try again.', 'error');
-        console.error('Form submission error:', error);
-    } finally {
-        setLoading(false);
+        // Track conversion
+        trackEvent('waitlist_signup', { method: 'formsubmit' });
     }
 });
+
+// Note: Form now submits directly to FormSubmit.co
+// The service will handle email delivery to xivi.tech@gmail.com
+// and redirect back to the site with ?success=true parameter
 
 // Email validation function
 function isValidEmail(email) {

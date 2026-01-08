@@ -93,7 +93,15 @@
                 <h3 class="waitlist-title">Get Early Access</h3>
                 <p class="waitlist-description">Be among the first to experience the future of deep tech innovation</p>
 
-                <form id="waitlist-form" class="waitlist-form">
+                <form action="https://formsubmit.co/xivi.tech@gmail.com" method="POST" id="waitlist-form"
+                    class="waitlist-form">
+                    <!-- FormSubmit Configuration -->
+                    <input type="hidden" name="_subject" value="New XIVI Waitlist Signup!">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_next" value="https://xivi-ai.github.io/XIVI/?success=true">
+
                     <div class="form-group">
                         <input type="email" id="email-input" name="email" placeholder="you@example.com" required
                             aria-label="Email address" autocomplete="email">
