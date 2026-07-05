@@ -84,9 +84,17 @@
                     A physics-grounded synthetic data engine for non-invasive bioelectric sensing.
                     We render the body's electric field so medical AI can finally learn from it.
                 </p>
-                <div class="status-badge">
-                    <span class="pulse-dot"></span>
-                    <span class="status-text">Launching Soon</span>
+            </div>
+
+            <!-- Thesis Section -->
+            <div class="thesis-section">
+                <div class="thesis-block">
+                    <h3 class="thesis-title">The Problem</h3>
+                    <p class="thesis-desc">Every non-invasive fetal-AI is starved of the same data. You can't collect it without a device — you can't validate the device without the data.</p>
+                </div>
+                <div class="thesis-block">
+                    <h3 class="thesis-title">The Insight</h3>
+                    <p class="thesis-desc">The physics is forward-computable. The data can be generated—and the sensor designed—in simulation, on GPUs.</p>
                 </div>
             </div>
 
@@ -98,8 +106,8 @@
                             <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="currentColor"/>
                         </svg>
                     </div>
-                    <h4 class="focus-title">Healthcare AI</h4>
-                    <p class="focus-desc">Non-invasive fetal monitoring where it's needed most</p>
+                    <h4 class="focus-title">Simulation</h4>
+                    <p class="focus-desc">Physics-grounded generation of bioelectric signals.</p>
                 </div>
                 <div class="focus-card">
                     <div class="focus-icon">
@@ -108,7 +116,7 @@
                         </svg>
                     </div>
                     <h4 class="focus-title">Synthetic Data</h4>
-                    <p class="focus-desc">Physics-grounded simulation on GPUs — data that doesn't exist yet</p>
+                    <p class="focus-desc">Training AI models without being bottlenecked by physical data collection.</p>
                 </div>
                 <div class="focus-card">
                     <div class="focus-icon">
@@ -116,8 +124,8 @@
                             <path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z" fill="currentColor"/>
                         </svg>
                     </div>
-                    <h4 class="focus-title">Edge Deployment</h4>
-                    <p class="focus-desc">GPU-free inference for real-world, offline-capable environments</p>
+                    <h4 class="focus-title">Edge AI</h4>
+                    <p class="focus-desc">Deploying robust, verified models to offline-capable environments.</p>
                 </div>
             </div>
 
@@ -126,25 +134,43 @@
                 <span class="recognition-text">NVIDIA Inception Grand Challenge 2026 · India</span>
             </div>
 
-            <!-- Email Waitlist Section -->
+            <!-- Team Section -->
+            <div class="team-section">
+                <h3 class="section-title">Core Team</h3>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <h4 class="member-name">Chinmaya Naik</h4>
+                        <p class="member-role">Founder / CEO</p>
+                    </div>
+                    <div class="team-member">
+                        <h4 class="member-name">Abhinav Navneet</h4>
+                        <p class="member-role">ML / Firmware Lead</p>
+                    </div>
+                </div>
+                <div class="traction-badge">
+                    <span>Status: TRL 3→4 | Core simulation engine validated</span>
+                </div>
+            </div>
+
+            <!-- Request Whitepaper Section -->
             <div class="waitlist-section">
-                <h3 class="waitlist-title">Get Early Access</h3>
-                <p class="waitlist-description">Be among the first to know when GIVI Genesis launches</p>
+                <h3 class="waitlist-title">Partner with GIVI Genesis</h3>
+                <p class="waitlist-description">We are seeking health-system pilots and deployment partners. Request our whitepaper for more information.</p>
 
                 <form action="https://formsubmit.co/xivi.tech@gmail.com" method="POST" id="waitlist-form"
                     class="waitlist-form">
                     <!-- FormSubmit Configuration -->
-                    <input type="hidden" name="_subject" value="New XIVI Waitlist Signup!">
+                    <input type="hidden" name="_subject" value="New XIVI Whitepaper Request!">
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_template" value="table">
                     <input type="text" name="_honey" style="display:none">
                     <input type="hidden" name="_next" value="https://xivi-ai.github.io/XIVI/?success=true">
 
                     <div class="form-group">
-                        <input type="email" id="email-input" name="email" placeholder="you@example.com" required
+                        <input type="email" id="email-input" name="email" placeholder="Work email address" required
                             aria-label="Email address" autocomplete="email">
                         <button type="submit" class="submit-btn" id="submit-btn">
-                            <span class="btn-text">Get Early Access</span>
+                            <span class="btn-text">Request Whitepaper</span>
                             <span class="btn-loader" style="display: none;">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
