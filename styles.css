@@ -210,20 +210,81 @@ body {
     margin-right: auto;
 }
 
-/* ==========================================
-   TRUST INDICATOR
-   ========================================== */
-.trust-indicator {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--spacing-xs);
-    font-size: 0.8125rem;
-    color: var(--color-text-secondary);
+.product-subtitle {
+    font-size: clamp(0.8125rem, 1.5vw, 0.9375rem);
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-accent-purple);
     margin-bottom: var(--spacing-md);
 }
 
-.trust-indicator svg {
-    color: #22c55e;
+/* ==========================================
+   FOCUS AREAS
+   ========================================== */
+.focus-areas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-xl);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.focus-card {
+    background: rgba(18, 18, 26, 0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    padding: var(--spacing-lg) var(--spacing-md);
+    transition: all var(--transition-base);
+}
+
+.focus-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(139, 92, 246, 0.25);
+    box-shadow: 0 8px 24px rgba(139, 92, 246, 0.1);
+}
+
+.focus-icon {
+    color: var(--color-accent-purple);
+    margin-bottom: var(--spacing-sm);
+    opacity: 0.85;
+}
+
+.focus-title {
+    font-family: var(--font-display);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-xs);
+}
+
+.focus-desc {
+    font-size: 0.8125rem;
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+}
+
+/* ==========================================
+   RECOGNITION BADGE
+   ========================================== */
+.recognition-badge {
+    margin-bottom: var(--spacing-2xl);
+}
+
+.recognition-text {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-text-secondary);
+    padding: var(--spacing-xs) var(--spacing-lg);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 100px;
+    background: rgba(255, 255, 255, 0.02);
 }
 
 /* ==========================================
@@ -722,6 +783,11 @@ body {
 
     .submit-btn {
         width: 100%;
+    }
+
+    .focus-areas {
+        grid-template-columns: 1fr;
+        max-width: 320px;
     }
 
     .orb-1,
