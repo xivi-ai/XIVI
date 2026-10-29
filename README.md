@@ -1,7 +1,8 @@
-# XIVI
+﻿# XIVI
 
-Visit: https://xivi-ai.github.io/XIVI/
+Website for Xivi Innovations Private Limited: https://xivi.work
 
-## License
+Products: FIVI (fivi.xivi.work), GIVI (givi.xivi.work), OIVI (oivi.xivi.work), WIVI (wivi.xivi.work).
 
-© 2026 XIVI. All rights reserved.
+(c) 2026 Xivi Innovations Private Limited. All rights reserved.
+

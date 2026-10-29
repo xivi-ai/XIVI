@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="FIVI">
+  <rect width="48" height="48" rx="11" fill="#0d2d33"/>
+  <path d="M14 14h20M14 14v20M14 24h13" fill="none" stroke="#fff" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M26 31.5l3.6 3.6L37 27" fill="none" stroke="#5fd0c0" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

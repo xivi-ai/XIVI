@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="WIVI">
+  <rect width="48" height="48" rx="11" fill="#0f3524"/>
+  <path d="M11 15L17.5 33L24 21L30.5 33L37 15" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.2" stroke="#fff"/>
+  <path d="M17.5 33L24 21L30.5 33" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.2" stroke="#8fd6b0"/>
+</svg>
