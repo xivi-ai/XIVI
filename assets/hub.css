@@ -45,11 +45,11 @@ header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdro
 .hero .cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:40px}
 .family{display:grid;gap:44px}
 .family .big{width:100%;max-width:470px;mix-blend-mode:multiply;justify-self:start}
-.rail{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:12px;padding-top:34px;max-width:470px}
-.rail::before{content:"";position:absolute;left:28px;right:28px;top:0;height:2px;background:var(--grad);border-radius:2px}
+.rail{position:relative;display:grid;grid-template-columns:repeat(5,1fr);gap:10px;padding-top:34px;max-width:470px}
+.rail::before{content:"";position:absolute;left:26px;right:26px;top:0;height:2px;background:var(--grad);border-radius:2px}
 .rail a{position:relative;display:flex;flex-direction:column;align-items:center;gap:10px;text-decoration:none;font-size:12.5px;font-weight:700;letter-spacing:.12em;color:var(--ink2)}
 .rail a::before{content:"";position:absolute;top:-34px;left:50%;width:2px;height:34px;background:var(--line)}
-.rail img{width:58px;height:58px;transition:transform .18s}
+.rail img{width:52px;height:52px;transition:transform .18s}
 .rail a:hover img{transform:translateY(-3px)}
 .rail a:hover{color:var(--ink)}
 @media(max-width:900px){.hero{padding:56px 0 64px}.hero .wrap{grid-template-columns:1fr;gap:56px}}
