@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'; manifest-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="color-scheme" content="only light">
 <title>XIVI — R&amp;D-led innovation company | Xivi Innovations</title>
 <meta name="description" content="XIVI is an R&amp;D-led innovation company building products in fintech, healthtech and climate technology: FIVI, GIVI, OIVI, NIVI and WIVI.">
@@ -100,7 +102,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/hub.css?v=5">
+<link rel="stylesheet" href="assets/hub.css?v=7">
+<script src="assets/frame.js" defer></script>
 </head>
 <body>
 
@@ -154,7 +157,7 @@
       <div class="sector">
         <h3>Fintech</h3>
         <div class="prods">
-          <a class="prod" href="https://fivi.xivi.work" style="--acc:#167a87">
+          <a class="prod fivi" href="https://fivi.xivi.work">
             <img src="assets/fivi-mark.svg" alt="">
             <span><span class="n">FIVI</span><span class="t">Verification layer for AI credit decisions</span><span class="d">Checks each live credit, AML or risk score against your error limits and returns Cleared, Abstain or Flagged.</span></span>
             <span class="go"><span class="status">Open for pilots</span><span class="arrow" aria-hidden="true">→</span></span>
@@ -165,17 +168,17 @@
       <div class="sector">
         <h3>Healthtech</h3>
         <div class="prods">
-          <a class="prod" href="https://givi.xivi.work" style="--acc:#2f66c9">
+          <a class="prod givi" href="https://givi.xivi.work">
             <img src="assets/givi-mark.svg" alt="">
             <span><span class="n">GIVI</span><span class="t">Synthetic data for bioelectric sensing</span><span class="d">Physics-grounded simulation that generates the data non-invasive medical AI needs.</span></span>
             <span class="go"><span class="status">Core engine validated</span><span class="arrow" aria-hidden="true">→</span></span>
           </a>
-          <a class="prod soon" href="https://oivi.xivi.work" style="--acc:#5148c8">
+          <a class="prod soon oivi" href="https://oivi.xivi.work">
             <img src="assets/oivi-mark.svg" alt="">
             <span><span class="n">OIVI</span><span class="t">Oncology detection and therapy devices</span></span>
             <span class="go"><span class="status soon">Coming soon</span><span class="arrow" aria-hidden="true">→</span></span>
           </a>
-          <a class="prod soon" href="https://nivi.xivi.work" style="--acc:#a3358a">
+          <a class="prod soon nivi" href="https://nivi.xivi.work">
             <img src="assets/nivi-mark.svg" alt="">
             <span><span class="n">NIVI</span><span class="t">Neural diagnostic and therapy devices</span></span>
             <span class="go"><span class="status soon">Coming soon</span><span class="arrow" aria-hidden="true">→</span></span>
@@ -186,7 +189,7 @@
       <div class="sector">
         <h3>Climate and environment</h3>
         <div class="prods">
-          <a class="prod soon" href="https://wivi.xivi.work" style="--acc:#1c7a50">
+          <a class="prod soon wivi" href="https://wivi.xivi.work">
             <img src="assets/wivi-mark.svg" alt="">
             <span><span class="n">WIVI</span><span class="t">Climate and environment technology</span></span>
             <span class="go"><span class="status soon">Coming soon</span><span class="arrow" aria-hidden="true">→</span></span>
